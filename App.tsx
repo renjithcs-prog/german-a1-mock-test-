@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { generateA1Quiz } from './services/gemini';
-import { submitToGoogleSheets } from './services/sheets';
+import { generateA1Quiz } from './gemini';
+import { submitToGoogleSheets } from './sheets';
 import { Question, QuizState, UserInfo } from './types';
-import QuestionCard from './components/QuestionCard';
-import ProgressBar from './components/ProgressBar';
-import Button from './components/Button';
-import UserInfoForm from './components/UserInfoForm';
+import QuestionCard from './QuestionCard';
+import ProgressBar from './ProgressBar';
+import Button from './Button';
+import UserInfoForm from './UserInfoForm';
 import { Trophy, AlertTriangle, ArrowRight, RefreshCw, Home, Star, CheckCircle2, BookOpen, Mic, PenTool, Headphones, Languages } from 'lucide-react';
 
 // Simple wrapper for Lottie Player
